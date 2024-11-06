@@ -187,15 +187,15 @@ int main(void)
   {
     /* USER CODE END WHILE */
 
+	  	}
+	  }
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+	  {
+	  	if((GPIO_Pin == GPIO_PIN_0)){
+	  		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
-}
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-	if((GPIO_Pin == GPIO_PIN_0)){
-		HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_5);
-	}
 }
 
 /**
